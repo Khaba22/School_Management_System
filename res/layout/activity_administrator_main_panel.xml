@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bb">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingTop="50dp"
+        android:text="Shine e-Learning"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bannerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Portable Class"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/regEducator"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/bannerDescription"
+        android:layout_marginTop="50dp"
+        android:background="#7393D3"
+        android:text="Register Educator"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/regLearner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_alignTop="@id/bannerDescription"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@id/regEducator"
+        android:layout_marginRight="20dp"
+        android:background="#7393D3"
+        android:text="Register Learner"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset User Password"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:background="#7393D3"
+        android:textAlignment="center"
+        android:layout_alignTop="@id/regEducator"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

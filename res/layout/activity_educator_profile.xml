@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bb"
+        tools:context=".UserProfile">
+
+        <TextView
+            android:id="@+id/userNameTitle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Username:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/userNameTitle"
+            app:layout_constraintStart_toStartOf="@+id/userNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTitle" />
+
+        <TextView
+            android:id="@+id/fullNameTitle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Full Name:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/userNameTitle"
+            app:layout_constraintStart_toStartOf="@+id/userNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/userNameTitle" />
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/fullNameTitle"
+            app:layout_constraintStart_toStartOf="@+id/fullNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTitle" />
+
+        <TextView
+            android:id="@+id/schoolNameTitle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="School Name:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/fullNameTitle"
+            app:layout_constraintStart_toStartOf="@id/fullNameTitle"
+            app:layout_constraintTop_toBottomOf="@id/fullNameTitle"/>
+
+        <TextView
+            android:id="@+id/schoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/schoolNameTitle"
+            app:layout_constraintStart_toStartOf="@+id/schoolNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/schoolNameTitle" />
+
+        <TextView
+            android:id="@+id/emailTitle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Email Address:"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck"
+            app:layout_constraintEnd_toEndOf="@id/schoolNameTitle"
+            app:layout_constraintStart_toStartOf="@id/schoolNameTitle"
+            app:layout_constraintTop_toBottomOf="@id/schoolNameTitle"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/emailTitle"
+            app:layout_constraintStart_toStartOf="@+id/emailTitle"
+            app:layout_constraintTop_toBottomOf="@+id/emailTitle" />
+
+        <TextView
+            android:id="@+id/passwordTitle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Password:"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck"
+            app:layout_constraintEnd_toEndOf="@id/emailTitle"
+            app:layout_constraintStart_toStartOf="@id/emailTitle"
+            app:layout_constraintTop_toBottomOf="@id/emailTitle"/>
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordTitle"
+            app:layout_constraintStart_toStartOf="@+id/passwordTitle"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTitle" />
+
+        <Button
+            android:id="@+id/updatePfl"
+            android:layout_width="269dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="50dp"
+            android:onClick="goToUpdateProfile"
+            android:text="Update profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#2196F3"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="@id/passwordTitle"
+            app:layout_constraintStart_toStartOf="@id/passwordTitle"
+            app:layout_constraintTop_toBottomOf="@id/passwordTitle"/>
+
+        <Button
+            android:id="@+id/signOut"
+            android:layout_width="269dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign Out"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#2196F3"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/updatePfl"
+            app:layout_constraintStart_toStartOf="@+id/updatePfl"
+            app:layout_constraintTop_toBottomOf="@+id/updatePfl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="@drawable/bb"
+    tools:context=".EducatorMainPanel"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/viewSubmissions"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="70dp"
+            android:text="Submissions"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="#00BCD4"
+            app:cornerRadius="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manageContent" />
+
+
+        <Button
+            android:id="@+id/manageContent"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:text="Content"
+            android:textColor="#FAFAFA"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="#00BCD4"
+            app:cornerRadius="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:onClick="goToProfile"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="#00BCD4"
+            app:cornerRadius="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

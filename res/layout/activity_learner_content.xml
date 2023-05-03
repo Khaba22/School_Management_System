@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bb"
+        tools:context=".LearnerContent">
+
+
+        <Button
+            android:id="@+id/mMaterials"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="220dp"
+            android:text="Materials"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mActivity"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:text="Activities"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="@+id/mMaterials"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toStartOf="@+id/mMaterials"
+            app:layout_constraintTop_toBottomOf="@+id/mMaterials" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
